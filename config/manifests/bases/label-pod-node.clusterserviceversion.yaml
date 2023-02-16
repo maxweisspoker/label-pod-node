@@ -1,0 +1,46 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: label-pod-node.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions: {}
+  description: This controller creates a label on pods for the pod's nodeName when
+    the required annotation is present on the pod
+  displayName: Pod nodeName label creator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - pod
+  - label
+  - nodename
+  - node
+  links:
+  - name: Label Pod Node
+    url: https://label-pod-node.domain
+  maintainers:
+  - email: contact@maxweiss.io
+    name: Max Weiss
+  maturity: alpha
+  provider:
+    name: label-pod-node
+    url: github.com/maxweisspoker/label-pod-node
+  version: 0.0.0
