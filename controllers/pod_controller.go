@@ -35,7 +35,7 @@ import (
 
 const (
 	addPodNodeLabelAnnotation = "k8s.maxweiss.io/label-pod-node"
-	podNodeNameLabel          = "nodeName"
+	podNodeNameLabel          = "node-name"
 )
 
 // PodReconciler reconciles a Pod object
