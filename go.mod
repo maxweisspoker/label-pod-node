@@ -1,6 +1,6 @@
 module github.com/maxweisspoker/label-pod-node
 
-go 1.22
+go 1.21
 
 require (
 	github.com/onsi/ginkgo/v2 v2.17.0
